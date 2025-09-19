@@ -1,0 +1,26 @@
+{
+  "0": {
+    "name": "NFT_title_0",
+    "description": "This is a test data",
+    "attributes": [],
+    "royalties": 10,
+    "format": "png",
+    "tags": []
+  },
+  "1": {
+    "name": "NFT_title_1",
+    "description": "This is a test data",
+    "attributes": [],
+    "royalties": 10,
+    "format": "png",
+    "tags": []
+  },
+  "2": {
+    "name": "NFT_title_2",
+    "description": "This is a test data",
+    "attributes": [],
+    "royalties": 10,
+    "format": "png",
+    "tags": []
+  }
+}

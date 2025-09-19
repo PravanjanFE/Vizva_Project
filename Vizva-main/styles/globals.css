@@ -1,0 +1,183 @@
+@font-face {
+  font-family: PPNeueMachina;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../public/fonts/PPNeueMachina-Regular.ttf);
+}
+@font-face {
+  font-family: PPNeueMachina;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../public/fonts/PPNeueMachina-Light.ttf);
+}
+@font-face {
+  font-family: PPNeueMachina;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../public/fonts/PPNeueMachina-Medium.ttf);
+}
+@font-face {
+  font-family: PPNeueMachina;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../public/fonts/PPNeueMachina-Bold.ttf);
+}
+@font-face {
+  font-family: PPNeueMachina;
+  font-weight: 200;
+  font-display: swap;
+  src: url(../public/fonts/PPNeueMachina-Ultralight.ttf);
+}
+@font-face {
+  font-family: PPNeueMachina;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../public/fonts/PPNeueMachina-Ultrabold.ttf);
+}
+@font-face {
+  font-family: PPNeueMachina;
+  font-weight: 900;
+  font-display: swap;
+  src: url(../public/fonts/PPNeueMachina-Black.ttf);
+}
+html,
+body {
+  min-width: 300px;
+  min-height: 100%;
+  /* overflow-x: hidden; */
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* user-select: none; */
+  font-family: PPNeueMachina;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.scrollbar {
+  scrollbar-width: thin;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 0.3rem;
+  transition: 250ms ease;
+}
+
+.scrollbar::-webkit-scrollbar-buttons {
+  display: none;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  margin-left: 1rem;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 1rem;
+  display: none;
+}
+
+.scrollbar:hover::-webkit-scrollbar-thumb,
+.scrollbar:focus::-webkit-scrollbar-thumb {
+  display: block;
+}
+:root {
+  --padding-0: 0px;
+  --padding-1: 4px;
+  --padding-2: 8px;
+  --padding-3: 12px;
+  --padding-4: 16px;
+  --padding-5: 20px;
+  --padding-6: 24px;
+  --padding-7: 32px;
+  --padding-8: 48px;
+  --padding-9: 64px;
+  --padding-10: 96px;
+  --padding-11: 128px;
+
+  --fontsizes-1: 16px;
+  --fontsizes-2: 18px;
+  --fontsizes-3: 20px;
+  --fontsizes-4: 22px;
+  --fontsizes-5: 25px;
+  --fontsizes-6: 28px;
+  --fontsizes-7: 36px;
+  --fontsizes-8: 48px;
+  --fontsizes-9: 56px;
+  --fontsizes-10: 68px;
+
+  --size-max: 1552px;
+}
+p,
+span,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+ul,
+li {
+  font-weight: 400;
+  /* line-height: 1em; */
+  /* font-size: var(--fontsizes-1); */
+}
+p,
+span,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+ul,
+li,
+input,
+textarea,
+select,
+label,
+button {
+  font-size: var(--fontsizes-1);
+}
+
+.infinite-scroll-component {
+  overflow: unset !important;
+}
+@media (min-width: 1100px) {
+  p,
+  span,
+  div,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  a,
+  ul,
+  li,
+  input,
+  textarea,
+  select,
+  label,
+  button {
+    font-size: var(--fontsizes-2);
+  }
+  p,
+  a,
+  button,
+  span,
+  div {
+    font-weight: 300;
+  }
+}

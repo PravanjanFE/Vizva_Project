@@ -1,0 +1,198 @@
+// import Link from "next/link";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { A11y, FreeMode, Navigation, Pagination } from "swiper";
+// import "swiper/css";
+// import "swiper/css/navigation";
+// import "swiper/css/pagination";
+// import "swiper/css/scrollbar";
+// import ArtworkCard from "components/layout/artworkCard";
+// import { breakpoint } from "public/breakpoint";
+// import { Header } from "./liveAuctions";
+// import styled from "@emotion/styled";
+// import LeftArrow from "components/icons/left arrow";
+// import RightArrow from "components/icons/right arrow";
+// import useMultipleNftDetails from "hooks/useMultipleNftDetails";
+// import { LoadingArtworkCard } from "components/layout/artworkCard";
+// import gsap, { Power1 } from "gsap";
+// import { useEffect, useState } from "react";
+// export default function TrendingArtworks() {
+//   const { loading, data, error } = useMultipleNftDetails("getAllOnSaleItems");
+//   const [width, setWidth] = useState(0);
+//   const [noOfElems, setNoOfElems] = useState(0);
+//   const [count, setCount] = useState(0);
+//   const [carouselElemWidth, setCarouselElemWidth] = useState(0);
+//   const [slidesPerPage, setSlidesPerPage] = useState(0);
+//   const spacing = 30;
+//   useEffect(() => {
+//     setNoOfElems(data && data.length < 8 ? data.length : 8);
+//   }, [data]);
+//   useEffect(() => {
+//     let w =
+//       document.querySelector("#auction-carousel-container")?.clientWidth ?? 0;
+//     let slidesNum = (() => {
+//       if (w <= 500) {
+//         return 1;
+//       } else if (w > 500 && w <= 800) {
+//         return 2;
+//       } else if (w > 800 && w <= 1100) {
+//         return 3;
+//       } else {
+//         return 4;
+//       }
+//     })();
+//     // get the spacing between the elements
+//     w = slidesNum > 1 ? w - (slidesNum - 1) * spacing : w;
+//     setWidth(w);
+//     setSlidesPerPage(slidesNum);
+//   }, []);
+//   useEffect(() => {
+//     setCarouselElemWidth(width / slidesPerPage);
+//   }, [width, slidesPerPage]);
+//   useEffect(() => {
+//     // if (typeof window !== "undefined") {
+//     // const w = slidesPerPage * carouselElemWidth;
+//     const animation1 = gsap.set(".artwork-carousel-container", {
+//       width: (carouselElemWidth + spacing) * noOfElems,
+//     });
+//     const animation2 = gsap.set(".trending-artwork-card", {
+//       width: carouselElemWidth,
+//       marginLeft: (i) => (i === 0 ? 0 : spacing),
+//     });
+
+//     return () => {
+//       animation1.kill();
+//       animation2.kill();
+//     };
+//     // }
+//   }, [width, noOfElems, count, carouselElemWidth, slidesPerPage]);
+
+//   return (
+//     <>
+//       <Header>
+//         <h2>trending artworks</h2>
+//         <Link href="/discover/artwork?category=instant sale">
+//           <a>view all</a>
+//         </Link>
+//       </Header>
+//       <StyledDiv>
+//         <div id="artwork-carousel-container">
+//           <div className="artwork-carousel-container">
+//             {data && data.length > 0 ? (
+//               <>
+//                 {data.map((artwork, index) => (
+//                   <ArtworkCard
+//                     data={artwork}
+//                     key={index}
+//                     className="trending-artwork-card"
+//                   />
+//                 ))}
+//               </>
+//             ) : (
+//               <>
+//                 {[1, 2, 3, 4, 5, 6, 7, 8].map((artwork) => (
+//                   <LoadingArtworkCard
+//                     key={artwork}
+//                     className="trending-artwork-card"
+//                   />
+//                 ))}
+//               </>
+//             )}
+//           </div>
+//         </div>
+//       </StyledDiv>
+//       <StyledNav>
+//         <LeftArrow
+//           className="artwork-previous-btn"
+//           onClick={() => {
+//             let c = count === 0 ? 0 : count - 1;
+//             gsap.to(".artwork-carousel-container", {
+//               x: -count * (carouselElemWidth + spacing),
+//             });
+//             setCount(c);
+//           }}
+//         />
+//         <div className="pagination"></div>
+//         <RightArrow
+//           className="artwork-next-btn"
+//           onClick={() => {
+//             let c = count + slidesPerPage >= noOfElems ? 0 : count + 1;
+//             gsap.to(".artwork-carousel-container", {
+//               duration: 0.5,
+//               x: -1 * c * (carouselElemWidth + spacing),
+//               ease: Power1.easeOut,
+//             });
+//             setCount(c);
+//           }}
+//         />
+//       </StyledNav>
+//     </>
+//   );
+// }
+// const StyledDiv = styled.div`
+//   padding: 0 var(--padding-sm);
+//   & > div {
+//     width: calc(100vw - 4rem);
+//     position: relative;
+//     margin: 0 auto;
+//     /* overflow: hidden; */
+//   }
+
+//   .artwork-carousel-container {
+//     display: flex;
+//     position: relative;
+//     top: 0;
+//     left: 0;
+//   }
+//   .trending-artwork-card {
+//     flex-shrink: 0;
+//   }
+// `;
+
+// const StyledNav = styled.div`
+//   max-width: 300px;
+//   margin: 0rem auto 1rem;
+//   display: grid;
+//   grid-template-columns: auto auto;
+//   /* grid-template-columns: auto 1fr auto; */
+//   place-items: center;
+
+//   svg {
+//     width: 40px;
+//     height: 40px;
+//     stroke: ${(props) => props.theme.secondary};
+//   }
+
+//   .pagination {
+//     /* display: flex; */
+//     display: none;
+//     justify-content: space-evenly;
+//     align-items: center;
+//     .swiper-pagination-bullet {
+//       width: 15px;
+//       border-radius: 10px;
+//       height: 3px;
+//       background-color: gray;
+//     }
+//     .swiper-pagination-bullet-active {
+//       width: 25px;
+//     }
+//   }
+
+//   ${breakpoint("md")} {
+//     max-width: 500px;
+
+//     svg {
+//       width: 40px;
+//       height: 40px;
+//     }
+
+//     .pagination {
+//       .swiper-pagination-bullet {
+//         width: 30px;
+//       }
+//       .swiper-pagination-bullet-active {
+//         width: 50px;
+//       }
+//     }
+//   }
+// `;
