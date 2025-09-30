@@ -38,8 +38,17 @@ Vizva Marketplace enables creators to mint, showcase, and trade NFTs while colle
 ---
 
 ## 🎨 UI & Branding
-To ensure consistency, clarity, and trust in a blockchain-heavy space, every interface element was aligned with Bool’s brand identity.  
-We used **Figma** for web page design and prototyping, enabling rapid iteration, collaboration, and interactive mockups that streamlined the transition from concept to development.  
+Every interface element was aligned with Bool’s brand identity to ensure consistency, clarity, and trust in a blockchain-heavy space.  
+
+We used **Figma** for end-to-end webpage design and prototyping, enabling rapid iteration, collaboration, and interactive mockups that streamlined the transition from design to development.  
+
+The prototype captured:  
+- **Landing & Homepage** → Featuring trending artists, artworks, live auctions, and onboarding guides like *How Vizva Works*.  
+- **Artists Page** → Profiles with search, filter, collections, and follower features to strengthen community engagement.  
+- **Artworks & Auctions** → Live auctions with countdown timers, open bidding, and real-time highest bid tracking.  
+- **NFT Creation Flow** → A step-by-step upload system with support for multiple file formats, royalties, lazy minting, pricing/auction setup, and confirmation screens.  
+- **Brand Messaging** → Integrated slogans (*Own Your Dream, Amplify Value, Inspire Forever, Invest in Metaverse*) to align user experience with Bool’s vision.  
+ 
 
 ---
 
