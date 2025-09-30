@@ -1,4 +1,4 @@
-![VizvaCoverImage](./assets/cover-image2.png)
+![VizvaCoverImage](./assets/cover-image2.jpg)
 
 # 🚦 Vizva Marketplace – Blockchain NFT Platform
 
@@ -35,6 +35,10 @@ Vizva Marketplace enables creators to mint, showcase, and trade NFTs while colle
 - **Interactive Features** → Built secure wallet integrations, NFT minting flows, dynamic search & filters, and personalized asset showcases.  
 - **Testing & Deployment** → Iteratively validated wallet connections, transaction signing, and UI flows for cross-device performance before launch.  
 
+<p align="center">
+<img src="./assets/mapoftheplatform.png" width="70%">
+</p>
+
 ---
 
 ## 🎨 UI & Branding
@@ -50,7 +54,7 @@ The prototype captured:
 - **Brand Messaging** → Integrated slogans (*Own Your Dream, Amplify Value, Inspire Forever, Invest in Metaverse*) to align user experience with Bool’s vision.  
 
 <p align="center">
-<img src="./assets/.png" width="70%"><br>
+<img src="./assets/Artists.png" width="70%"><br>
 <a href="https://www.figma.com/design/Z6QS50uoMpl2kvZcln6zAW/Vizva-Marketplace?node-id=190-777&t=sYpkKB7YbgcG5FIm-1" target="blank">▶ Click here to explore the UX flow</a>
 </p>
 
@@ -63,6 +67,10 @@ The prototype captured:
 - **Wallet Activity Tracking** → Real-time monitoring of balances, active bids, and transactions.  
 - **Marketplace Insights** → Live stats on collections, creators, and volumes.  
 - **Security Oversight** → Integrated audit logs for contract activity and wallet interactions.  
+
+<p align="center">
+<img src="./assets/graph.png" width="70%">
+</p>
 
 ---
 
