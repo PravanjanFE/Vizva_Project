@@ -1,4 +1,4 @@
-![VizvaCoverImage](./assets/cover-image.png)
+![VizvaCoverImage](./assets/cover-image2.png)
 
 # 🚦 Vizva Marketplace – Blockchain NFT Platform
 
@@ -50,7 +50,8 @@ The prototype captured:
 - **Brand Messaging** → Integrated slogans (*Own Your Dream, Amplify Value, Inspire Forever, Invest in Metaverse*) to align user experience with Bool’s vision.  
 
 <p align="center">
-<img src="./assets/prototype.png" width="70%"><br>
+<img src="./assets/.png" width="70%"><br>
+<a href="https://www.figma.com/design/Z6QS50uoMpl2kvZcln6zAW/Vizva-Marketplace?node-id=190-777&t=sYpkKB7YbgcG5FIm-1" target="blank">▶ Click here to explore the UX flow</a>
 </p>
 
 ---
@@ -79,6 +80,10 @@ The prototype captured:
 **Backend**  
 - Solidity smart contracts  
 - Blockchain APIs  
+
+---
+
+![Demo GIF](./assets/gif.gif)
 
 ---
 
