@@ -1,4 +1,4 @@
-![SKVR](./Assets/Images/github/cover-image.png)
+![VizvaCoverImage](./Assets/cover-image.png)
 
 # 🚦 Vizva Marketplace – Blockchain NFT Platform
 
@@ -48,7 +48,10 @@ The prototype captured:
 - **Artworks & Auctions** → Live auctions with countdown timers, open bidding, and real-time highest bid tracking.  
 - **NFT Creation Flow** → A step-by-step upload system with support for multiple file formats, royalties, lazy minting, pricing/auction setup, and confirmation screens.  
 - **Brand Messaging** → Integrated slogans (*Own Your Dream, Amplify Value, Inspire Forever, Invest in Metaverse*) to align user experience with Bool’s vision.  
- 
+
+<p align="center">
+<img src="./assets/prototype.png" width="70%"><br>
+</p>
 
 ---
 
