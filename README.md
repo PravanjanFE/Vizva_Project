@@ -1,4 +1,4 @@
-![VizvaCoverImage](./Assets/cover-image.png)
+![VizvaCoverImage](./assets/cover-image.png)
 
 # 🚦 Vizva Marketplace – Blockchain NFT Platform
 
