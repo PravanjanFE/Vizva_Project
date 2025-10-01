@@ -1,13 +1,13 @@
 ![VizvaCoverImage](./assets/cover-image2.jpg)
 
-# 🚦 Vizva Marketplace – Blockchain NFT Platform
+# 🚦 Vizva Marketplace – NFT Platform
 
 Transforming digital ownership into a seamless Web3 experience, **Vizva Marketplace** blends blockchain-powered NFT trading with Bool’s brand ecosystem, empowering creators and collectors with transparent transactions, personalized discovery, and true on-chain ownership.  
 
 What if every artwork, collectible, or asset could be owned and traded on-chain with the same ease as browsing an online store — but backed by complete trust and security?  
 What if blockchain’s complexity was hidden behind an intuitive interface, while every interaction was safeguarded by audited smart contracts?  
 
-We’re leveraging **emerging Web3 technologies** — React, Next.js, Solidity, and blockchain APIs — working seamlessly together to deliver a secure, scalable, and human-centered NFT marketplace.  
+Leveraging **emerging Web3 technologies** — React, Next.js, Solidity, and blockchain APIs — working seamlessly together to deliver a secure, scalable, and human-centered NFT marketplace.  
 
 ---
 
