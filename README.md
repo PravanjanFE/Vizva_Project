@@ -54,7 +54,7 @@ The prototype captured:
 - **Brand Messaging** → Integrated slogans (*Own Your Dream, Amplify Value, Inspire Forever, Invest in Metaverse*) to align user experience with Bool’s vision.  
 
 <p align="center">
-<img src="./assets/Artists.png" width="70%"><br>
+<img src="./assets/graph.png" width="70%"><br>
 <a href="https://www.figma.com/design/Z6QS50uoMpl2kvZcln6zAW/Vizva-Marketplace?node-id=190-777&t=sYpkKB7YbgcG5FIm-1" target="blank">▶ Click here to explore the UX flow</a>
 </p>
 
@@ -67,10 +67,6 @@ The prototype captured:
 - **Wallet Activity Tracking** → Real-time monitoring of balances, active bids, and transactions.  
 - **Marketplace Insights** → Live stats on collections, creators, and volumes.  
 - **Security Oversight** → Integrated audit logs for contract activity and wallet interactions.  
-
-<p align="center">
-<img src="./assets/graph.png" width="70%">
-</p>
 
 ---
 
